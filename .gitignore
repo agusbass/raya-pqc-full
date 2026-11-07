@@ -1,0 +1,26 @@
+# RAYA-PQC — Private keys NEVER committed
+.raya/keys/sk_*.bin
+
+# Secrets — encrypt these with: raya-pqc encrypt .env
+.env
+*.env.local
+.env.production
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Node / JS
+node_modules/
+.next/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db

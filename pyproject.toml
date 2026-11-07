@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "raya-pqc"
+version = "0.1.0"
+description = "Post-Quantum Cryptography library — ML-KEM, ML-DSA, code signing & encryption"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "cryptography>=41.0",
+]
+
+[project.scripts]
+raya-pqc = "cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["raya_pqc*"]
